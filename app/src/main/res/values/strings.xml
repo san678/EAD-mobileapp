@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Mobile App</string>
+    <string-array name="ticket_classes">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+    </string-array>
+</resources>

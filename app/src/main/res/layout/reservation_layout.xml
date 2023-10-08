@@ -1,0 +1,266 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_border"
+    tools:context=".Train_Reservation_Management.TrainReservationActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/button_border"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:gravity="center_horizontal">
+
+    <EditText
+        android:id="@+id/editTextTravelerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Traveler Name"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextNIC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIC"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:padding="16dp"
+                android:background="#99DBDBE6">
+
+                <TextView
+                    android:id="@+id/editTextReservationDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Reservation Date"
+                    android:inputType="date"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"/>
+
+                <ImageButton
+                    android:id="@+id/calendarButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_calendar_month_24"
+                    android:contentDescription="Calendar Icon"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"/>
+
+            </RelativeLayout>
+
+            <EditText
+        android:id="@+id/editTextTrainID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train ID"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextDepartureLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure Location"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextDestinationLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination Location"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextNumPassengers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Number of Passengers"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="Age"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#99DBDBE6"
+                android:layout_marginTop="16dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/ticketClassLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="Ticket Class"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <Spinner
+                    android:id="@+id/ticketClassSpinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white"
+                    android:background="#B2FFFFFF"
+                    style="@style/SpinnerDropDownItem" />
+
+            </LinearLayout>
+
+            <EditText
+        android:id="@+id/editTextSeatSelection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seat Selection"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Phone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:background="#99DBDBE6"/>
+
+    <Button
+        android:id="@+id/buttonSubmitReservation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit Reservation"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_border"
+        android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:elevation="16dp">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_add_box_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_library_books_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_train_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            android:tint="#ffff" />
+    </LinearLayout>
+
+</LinearLayout>

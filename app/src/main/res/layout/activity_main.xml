@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_border"
+    tools:context=".MainActivity">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="47dp"
+        tools:context=".AboutUsActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="47dp"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/homeimage"
+                android:layout_width="270dp"
+                android:layout_height="280dp"
+                android:src="@drawable/are"
+                android:layout_gravity="center"
+                android:layout_marginTop="16dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Train Booking System offers a user-friendly platform for reserving train tickets. The app allows users to easily browse schedules, select their desired class, and make reservations hassle-free. Whether it's a leisurely scenic trip or a daily commute, we've got you covered. Real-time updates and a simple cancellation process ensure a smooth travel experience. Join us in turning your train journeys into unforgettable memories!"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:lineSpacingExtra="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:elevation="8dp">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_add_box_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_library_books_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_train_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            android:tint="#ffff" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_border"
+    tools:context=".User_Management.UpdateUser">
+
+    <include layout="@layout/top_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="#524CAF50"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="170dp"
+        android:layout_height="180dp"
+        android:src="@drawable/avatar"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        />
+
+    <EditText
+        android:id="@+id/updatedUserNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UserName"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#6BF3EFEF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/updatedFirstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Name"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#6BF3EFEF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/updatedLastNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Last Name"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#6BF3EFEF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/updatedPhoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Contact Number"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#6BF3EFEF"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/updatedEmailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:background="#6BF3EFEF"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_border"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:elevation="16dp">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_add_box_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_library_books_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_train_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            android:tint="#ffff" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/button_border"
+    android:gravity="center"
+    tools:context=".User_Management.SignInActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Sign In"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:layout_margin="16dp"/>
+
+    <EditText
+        android:id="@+id/nicEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:background="#6BF3EFEF"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:hint="NIC"
+        android:textColorHint="@color/white"
+        android:layout_margin="16dp" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:background="#6BF3EFEF"
+        android:padding="16dp"
+        android:textColor="@color/white"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:layout_margin="16dp" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_border"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:id="@+id/txtSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/white"
+        android:layout_margin="16dp" />
+</LinearLayout>

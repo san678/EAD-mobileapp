@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_border"
+    tools:context=".Train_Reservation_Management.UpdateTrainReservation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@drawable/button_border"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/top_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/travelerNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Traveler Name"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/nicEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="NIC"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/trainIDEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Train ID"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/departureLocationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Departure Location"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/destinationLocationEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Destination Location"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/emailEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/numPassengersEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Number of Passengers"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/ageEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Age"
+                    android:inputType="number"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="#80FFFFFF"
+                    android:layout_marginBottom="16dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/ticketClassLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:text="Ticket Class"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+
+                    <Spinner
+                        android:id="@+id/ticketClassSpinner"
+                        android:layout_width="47dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"
+                        android:background="#B2FFFFFF"
+                        style="@style/SpinnerDropDownItem" />
+
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/seatSelectionEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Seat Selection"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <EditText
+                    android:id="@+id/phoneEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:background="#80FFFFFF"
+                    android:hint="Phone"
+                    android:inputType="phone"
+                    android:padding="16dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/white" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:padding="16dp"
+                    android:background="#80FFFFFF">
+
+                    <TextView
+                        android:id="@+id/editTextReservationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Reservation Date"
+                        android:inputType="date"
+                        android:textColor="@color/white"
+                        android:textColorHint="@color/white"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/updateButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:padding="12dp"
+                    android:text="Update Reservation"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginBottom="16dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/button_border"
+            android:elevation="16dp">
+
+            <ImageButton
+                android:id="@+id/button1"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_border"
+                android:src="@drawable/ic_baseline_home_24"
+                android:tint="#ffff" />
+
+            <ImageButton
+                android:id="@+id/button2"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_border"
+                android:src="@drawable/ic_baseline_add_box_24"
+                android:tint="#ffff" />
+
+            <ImageButton
+                android:id="@+id/button3"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_border"
+                android:src="@drawable/ic_baseline_library_books_24"
+                android:tint="#ffff" />
+
+            <ImageButton
+                android:id="@+id/button4"
+                android:layout_width="0dp"
+                android:layout_height="47dp"
+                android:layout_weight="2"
+                android:background="@drawable/button_border"
+                android:src="@drawable/ic_baseline_train_24"
+                android:tint="#ffff" />
+
+            <ImageButton
+                android:id="@+id/button5"
+                android:layout_width="47dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/button_border"
+                android:src="@drawable/ic_baseline_supervised_user_circle_24"
+                android:tint="#ffff" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/button_border"
+    tools:context=".Train_Management.TrainDetails">
+
+    <include layout="@layout/top_bar" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/trainRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        android:clipToPadding="false"
+        android:scrollbars="vertical"
+        android:background="@drawable/button_border"
+        tools:listitem="@layout/train_list_item"
+        android:layout_marginBottom="16dp"/>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/button_border"
+        android:elevation="16dp">
+
+        <ImageButton
+            android:id="@+id/button1"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_home_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button2"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_add_box_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button3"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_library_books_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_train_24"
+            android:tint="#ffff" />
+
+        <ImageButton
+            android:id="@+id/button5"
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/button_border"
+            android:src="@drawable/ic_baseline_supervised_user_circle_24"
+            android:tint="#ffff" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

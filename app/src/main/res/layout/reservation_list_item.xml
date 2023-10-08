@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/button_border"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/trainIDLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Train ID :"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/reservationTrainIDTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/bookingIDLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking ID :"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+
+
+        <TextView
+            android:id="@+id/reservationBookingStatusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp"
+            android:gravity="center_horizontal"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:id="@+id/bookingDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Booking Date :"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                />
+
+
+
+            <TextView
+                android:id="@+id/reservationBookingDateTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_margin="4dp">
+
+        <TextView
+            android:id="@+id/reservationDateLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reservation Date :"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:id="@+id/reservationReservationDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/updateButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_borderupdate"
+                android:textColor="#FFFFFF"
+                android:text="Update"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/viewButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_borderview"
+                android:textColor="#FFFFFF"
+                android:text="View"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_borderdelete"
+                android:textColor="#FFFFFF"
+                android:text="Cancel"
+                android:layout_margin="4dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="#3F51B5" />
+
+</RelativeLayout>
